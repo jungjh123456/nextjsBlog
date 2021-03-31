@@ -1,7 +1,8 @@
 import React from 'react';
+import HeaderContainer from '../containers/HeaderContainer';
 
 const blog = () => {
-	return <div>dd</div>;
+	return <HeaderContainer />;
 };
 
 export default blog;
