@@ -1,17 +1,21 @@
 import React from 'react';
 import { MainLiStyle } from '../MainStyle';
 
-const LiItems = ({ title, name }) => {
+const LiItems = ({ item }) => {
 	return (
 		<MainLiStyle>
 			{
 				<>
-					<h1>{name}</h1>
-					<span>{title}</span>
+					<h1>{item.name}</h1>
+					<span>{item.title}</span>
 				</>
 			}
 		</MainLiStyle>
 	);
 };
 
-export default React.memo(LiItems);
+function equl(prev, next) {
+	return false;
+}
+
+export default React.memo(LiItems, equl);

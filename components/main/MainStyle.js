@@ -1,19 +1,52 @@
 import styled from 'styled-components';
 
 export const MainWrap = styled.main`
-	height: 400px;
 	min-height: 400px;
 	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
 `;
 
 export const SectionWrap = styled.section`
-	overflow: hidden;
-	height: 100%;
+	/* overflow: hidden; */
+
+	height: 400px;
+	li {
+		list-style: none;
+	}
+	.slick-slider {
+		.slick-list {
+			height: 400px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			margin-left: 50px;
+		}
+		button {
+			border: 1px solid rgba(0, 0, 0, 0.3);
+			border-radius: 50%;
+		}
+		.slick-prev {
+			position: absolute;
+			left: 10px;
+			bottom: 50%;
+			transform: translateY(50%);
+			z-index: 100;
+		}
+		.slick-next {
+			position: absolute;
+			right: 10px;
+			bottom: 50%;
+			transform: translateY(50%);
+			z-index: 100;
+		}
+	}
 `;
 
 export const NavWrap = styled.nav`
 	position: relative;
-	width: 100vw;
+	width: 100%;
+	position: relative;
+	display: flse;
 	height: 100%;
 `;
 export const CaroselDiv = styled.div`
