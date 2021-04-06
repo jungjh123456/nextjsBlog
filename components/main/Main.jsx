@@ -1,14 +1,23 @@
 import React from 'react';
+import BlogHistoryContainer from '../../containers/BlogHistoryContainer';
+import ImgContainer from '../../containers/ImgContainer';
 import NavContainer from '../../containers/NavContainer';
-import { MainWrap, SectionWrap } from './MainStyle';
+import BlogHistory from './BlogHistory/BlogHistory';
+import { MainWrap, SectionWrapImg, SectionWrapNavigation, SectionWrapSub } from './MainStyle';
 import Nav from './Navigation/Nav';
 
 const Main = () => {
 	return (
 		<MainWrap>
-			<SectionWrap>
+			<SectionWrapNavigation>
 				<NavContainer />
-			</SectionWrap>
+			</SectionWrapNavigation>
+			<SectionWrapImg>
+				<ImgContainer />
+			</SectionWrapImg>
+			<SectionWrapSub>
+				<BlogHistoryContainer />
+			</SectionWrapSub>
 		</MainWrap>
 	);
 };

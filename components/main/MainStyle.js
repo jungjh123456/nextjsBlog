@@ -2,13 +2,13 @@ import styled from 'styled-components';
 
 export const MainWrap = styled.main`
 	min-height: 400px;
-	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
 `;
 
-export const SectionWrap = styled.section`
+export const SectionWrapNavigation = styled.section`
 	/* overflow: hidden; */
 
 	height: 400px;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
 	li {
 		list-style: none;
 	}
@@ -94,4 +94,12 @@ export const LeftBtn = styled.button`
 	left: 4%;
 	bottom: 50%;
 	transform: translateY(-50%);
+`;
+
+export const SectionWrapImg = styled.section``;
+
+export const SectionWrapSub = styled.section`
+	/* border: 1px solid; */
+	/* min-height: 400px; */
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
 `;
