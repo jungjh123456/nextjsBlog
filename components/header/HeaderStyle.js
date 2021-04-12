@@ -8,10 +8,10 @@ export const HeaderStyle = styled.header`
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	background-color: rgba(0, 0, 0, 0.2);
+	/* background-color: rgba(0, 0, 0, 0.2); */
 	z-index: 100;
 	padding: 0;
-	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+	/* box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3); */
 	transition: background-color 0.5s;
 	min-height: 100px;
 	&.active {
@@ -29,6 +29,7 @@ export const UlStyle = styled.ul`
 	margin: 0;
 	margin-right: 30px;
 	padding: 30px 0;
+	color: #fff;
 	box-sizing: border-box;
 `;
 
@@ -53,6 +54,7 @@ export const ButtonStyle = styled.button`
 	background: none;
 	border: 0;
 	display: flex;
+	color: #fff;
 	svg {
 		font-size: 2rem;
 	}

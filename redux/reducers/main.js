@@ -4,9 +4,7 @@ import { SET_NAME, SET_NAME_SUCCESS } from '../types';
 import * as API from '../Api/imgs';
 import { takeLatest } from '@redux-saga/core/effects';
 const initialState = {
-	userInfo: {
-		img: '',
-	},
+	img: '',
 };
 
 const main = handleActions(
@@ -14,7 +12,7 @@ const main = handleActions(
 		[SET_NAME_SUCCESS]: (state, { payload }) => {
 			return {
 				...state,
-				userInfo: { img: payload.config.url },
+				img: payload.config.url,
 			};
 		},
 	},

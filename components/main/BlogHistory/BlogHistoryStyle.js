@@ -9,8 +9,6 @@ export const UlBlogHistory = styled.ul`
 	flex-direction: row;
 	& > li > a:hover {
 		border: 0;
-		border-top-right-radius: 25%;
-		border-bottom-right-radius: 25%;
 	}
 	li {
 		font-size: 1.4rem;
@@ -21,8 +19,6 @@ export const UlBlogHistory = styled.ul`
 
 		& > a:hover {
 			border: 0;
-			border-top-right-radius: 25%;
-			border-bottom-right-radius: 25%;
 		}
 		a {
 			display: block;
@@ -31,9 +27,6 @@ export const UlBlogHistory = styled.ul`
 			transition: background-color 0.4s;
 			&:hover {
 				background-color: #353523;
-
-				border-top-right-radius: 25%;
-				border-bottom-right-radius: 25%;
 			}
 		}
 	}
