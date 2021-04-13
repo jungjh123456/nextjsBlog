@@ -6,10 +6,10 @@ import NavContainer from '../../containers/NavContainer';
 
 import { MainWrap, SectionWrapImg, SectionWrapNavigation, SectionWrapSub } from './MainStyle';
 
-const Main = () => {
+const Main = ({ img }) => {
 	return (
 		<MainWrap>
-			<SectionWrapImg>
+			<SectionWrapImg img={img}>
 				<ImgContainer />
 			</SectionWrapImg>
 			<SectionWrapNavigation>
