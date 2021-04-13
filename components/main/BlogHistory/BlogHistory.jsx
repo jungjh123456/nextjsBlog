@@ -8,7 +8,7 @@ const BlogHistory = () => {
 			<UlBlogHistory>
 				<li>
 					<Link href="https://github.com/jungjh123456">
-						<a target="_blank">GitHub</a>
+						<a target="_blank">GitHub2</a>
 					</Link>
 				</li>
 				<li>
