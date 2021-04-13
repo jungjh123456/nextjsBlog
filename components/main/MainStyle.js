@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const MainWrap = styled.main`
 	min-height: 400px;
@@ -96,7 +96,36 @@ export const LeftBtn = styled.button`
 	transform: translateY(-50%);
 `;
 
-export const SectionWrapImg = styled.section``;
+export const SectionWrapImg = styled.section`
+	min-width: 100%;
+	height: 500px;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 50px;
+	h1 {
+		font-size: 5rem;
+		font-weight: 800;
+		letter-spacing: 5px;
+		color: #fff;
+	}
+	span {
+		font-size: 3rem;
+		font-weight: 800;
+		letter-spacing: 5px;
+		color: #fff;
+	}
+	${(props) => {
+		console.log(props);
+		return css`
+			width: 100%;
+			background-image: url(${props.img});
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		`;
+	}}
+`;
 
 export const SectionWrapSub = styled.section`
 	/* border: 1px solid; */
