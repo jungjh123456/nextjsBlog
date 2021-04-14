@@ -2,6 +2,10 @@ import styled, { css } from 'styled-components';
 
 export const MainWrap = styled.main`
 	min-height: 400px;
+	background-image: url('/img/Bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 `;
 
 export const SectionWrapNavigation = styled.section`
@@ -9,6 +13,7 @@ export const SectionWrapNavigation = styled.section`
 
 	height: 400px;
 	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+	background-color: #fff;
 	li {
 		list-style: none;
 	}
@@ -98,37 +103,16 @@ export const LeftBtn = styled.button`
 
 export const SectionWrapImg = styled.section`
 	min-width: 100%;
-	height: 500px;
+	min-height: 500px;
 	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	padding-left: 50px;
-	h1 {
-		font-size: 5rem;
-		font-weight: 800;
-		letter-spacing: 5px;
-		color: #fff;
-	}
-	span {
-		font-size: 3rem;
-		font-weight: 800;
-		letter-spacing: 5px;
-		color: #fff;
-	}
-	${(props) => {
-		console.log(props);
-		return css`
-			width: 100%;
-			background-image: url(${props.img});
-			background-repeat: no-repeat;
-			background-size: 100% 100%;
-		`;
-	}}
+	/* justify-content: center; */
 `;
 
 export const SectionWrapSub = styled.section`
 	/* border: 1px solid; */
 	/* min-height: 400px; */
 	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+	background-color: #fff;
 `;

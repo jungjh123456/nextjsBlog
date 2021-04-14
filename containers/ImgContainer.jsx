@@ -7,4 +7,4 @@ const ImgContainer = () => {
 	return <BackImg />;
 };
 
-export default ImgContainer;
+export default React.memo(ImgContainer);
