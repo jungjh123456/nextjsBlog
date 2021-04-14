@@ -6,7 +6,7 @@ import NavContainer from '../../containers/NavContainer';
 
 import { MainWrap, SectionWrapImg, SectionWrapNavigation, SectionWrapSub } from './MainStyle';
 
-const Main = ({ img }) => {
+const Main = ({ img, sectionRef, anime }) => {
 	return (
 		<MainWrap>
 			<SectionWrapImg img={img}>
@@ -15,8 +15,8 @@ const Main = ({ img }) => {
 			<SectionWrapNavigation>
 				<NavContainer />
 			</SectionWrapNavigation>
-			<SectionWrapSub>
-				<BlogHistoryContainer />
+			<SectionWrapSub ref={sectionRef}>
+				<BlogHistoryContainer anime={anime} />
 			</SectionWrapSub>
 		</MainWrap>
 	);

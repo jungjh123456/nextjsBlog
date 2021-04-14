@@ -10,7 +10,6 @@ const HeaderContainer = () => {
 			} else {
 				setStyleHeader(false);
 			}
-			console.log(styleheader);
 		});
 	}, [styleheader]);
 	return <Header styleheader={styleheader} />;

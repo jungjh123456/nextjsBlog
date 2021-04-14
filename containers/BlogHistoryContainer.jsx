@@ -2,8 +2,8 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import BlogHistory from '../components/main/BlogHistory/BlogHistory';
 
-const BlogHistoryContainer = () => {
-	return <BlogHistory />;
+const BlogHistoryContainer = ({ anime }) => {
+	return <BlogHistory anime={anime} />;
 };
 
-export default BlogHistoryContainer;
+export default React.memo(BlogHistoryContainer);

@@ -1,24 +1,16 @@
 import Link from 'next/link';
 import React from 'react';
 import { H2Style, UlBlogHistory } from './BlogHistoryStyle';
-const BlogHistory = () => {
+import LiItem from './LiItem';
+const BlogHistory = ({ anime }) => {
 	return (
 		<>
 			<H2Style>나의 GitHub {'&&'} Blog</H2Style>
-			<UlBlogHistory>
-				<li>
-					<Link href="https://github.com/jungjh123456">
-						<a target="_blank">GitHub</a>
-					</Link>
-				</li>
-				<li>
-					<Link href="https://velog.io/@jungjh123456">
-						<a target="_blank">Blog</a>
-					</Link>
-				</li>
+			<UlBlogHistory anime={anime}>
+				<LiItem />
 			</UlBlogHistory>
 		</>
 	);
 };
 
-export default BlogHistory;
+export default React.memo(BlogHistory);
