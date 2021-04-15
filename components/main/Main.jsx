@@ -1,22 +1,24 @@
 import React from 'react';
 import BlogHistoryContainer from '../../containers/BlogHistoryContainer';
+import HeartImgContainer from '../../containers/HeartImgContainer';
 
 import ImgContainer from '../../containers/ImgContainer';
 import NavContainer from '../../containers/NavContainer';
+import HeartImg from './heartimg/HeartImg';
 
 import { MainWrap, SectionWrapImg, SectionWrapNavigation, SectionWrapSub } from './MainStyle';
 
-const Main = ({ img, sectionRef, anime }) => {
+const Main = ({ img, sectionRef }) => {
 	return (
 		<MainWrap>
 			<SectionWrapImg img={img}>
 				<ImgContainer />
 			</SectionWrapImg>
 			<SectionWrapNavigation>
-				<NavContainer />
+				<HeartImgContainer />
 			</SectionWrapNavigation>
-			<SectionWrapSub ref={sectionRef}>
-				<BlogHistoryContainer anime={anime} />
+			<SectionWrapSub id="blogSection" ref={sectionRef}>
+				<BlogHistoryContainer />
 			</SectionWrapSub>
 		</MainWrap>
 	);

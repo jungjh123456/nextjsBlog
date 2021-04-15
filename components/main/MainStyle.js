@@ -10,41 +10,10 @@ export const MainWrap = styled.main`
 
 export const SectionWrapNavigation = styled.section`
 	/* overflow: hidden; */
-
-	height: 400px;
+	position: relative;
+	height: 800px;
 	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
-	background-color: #fff;
-	li {
-		list-style: none;
-	}
-	.slick-slider {
-		.slick-list {
-			height: 400px;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			margin-left: 50px;
-		}
-		button {
-			border: 1px solid rgba(0, 0, 0, 0.3);
-			border-radius: 50%;
-		}
-		.slick-prev {
-			position: absolute;
-			left: 10px;
-			bottom: 50%;
-			transform: translateY(50%);
-			z-index: 100;
-		}
-		.slick-next {
-			position: absolute;
-			right: 10px;
-			bottom: 50%;
-			transform: translateY(50%);
-			z-index: 100;
-		}
-	}
+	/* background-color: #fff; */
 `;
 
 export const NavWrap = styled.nav`
@@ -103,7 +72,7 @@ export const LeftBtn = styled.button`
 
 export const SectionWrapImg = styled.section`
 	min-width: 100%;
-	min-height: 500px;
+	min-height: 600px;
 	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
 	display: flex;
 	flex-direction: column;
@@ -112,7 +81,10 @@ export const SectionWrapImg = styled.section`
 
 export const SectionWrapSub = styled.section`
 	/* border: 1px solid; */
-	/* min-height: 400px; */
+	min-height: 300px;
+	position: relative;
+	overflow: hidden;
 	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
-	background-color: #fff;
+	background-color: #000;
+	/* padding-bottom: 10px; */
 `;

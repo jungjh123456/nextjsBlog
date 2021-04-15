@@ -1,11 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Main from '../components/main/Main';
+import { setAnimeFalse, setAnimeTrue } from '../redux/actions/header';
 import { setInfo } from '../redux/actions/main';
 
 const MainContainer = () => {
 	const dispatch = useDispatch();
-	const [anime, setAnime] = useState(false);
+	// const [anime, setAnime] = useState(false);
 	const sectionRef = useRef();
 
 	useEffect(() => {
@@ -13,24 +14,26 @@ const MainContainer = () => {
 			entries.forEach((entry) => {
 				console.log(entry.isIntersecting);
 				if (entry.isIntersecting) {
-					setAnime(true);
+					// setAnime(true);
+					dispatch(setAnimeTrue());
 				} else {
-					setAnime(false);
+					// setAnime(false);
+					dispatch(setAnimeFalse());
 				}
 			});
 		});
 		observer.observe(sectionRef.current);
-	}, [anime]);
-	console.log(anime);
+	}, []);
+
 	useEffect(() => {
 		dispatch(setInfo());
 	}, []);
-	console.log(sectionRef);
+
 	const {
 		main: { img },
 	} = useSelector((item) => item);
 	console.log(img);
-	return <Main img={img} anime={anime} sectionRef={sectionRef} />;
+	return <Main img={img} sectionRef={sectionRef} />;
 };
 
 export default MainContainer;

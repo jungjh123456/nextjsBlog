@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const HeaderStyle = styled.header`
 	position: fixed;
@@ -14,12 +14,33 @@ export const HeaderStyle = styled.header`
 	/* box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3); */
 	transition: background-color 0.5s;
 	min-height: 100px;
+	svg {
+		color: #000;
+	}
+	${(props) => {
+		console.log(props);
+		return (
+			props.isAnime &&
+			css`
+				background-color: #fff !important;
+				svg {
+					color: #000 !important;
+				}
+				ul {
+					color: #000 !important;
+				}
+			`
+		);
+	}}
 	&.active {
-		background-color: rgb(0, 0, 0);
+		background-color: #000;
 		color: #fff;
 		svg {
 			color: #fff;
 		}
+	}
+	&.active > ul {
+		color: #fff;
 	}
 `;
 
@@ -29,7 +50,7 @@ export const UlStyle = styled.ul`
 	margin: 0;
 	margin-right: 30px;
 	padding: 30px 0;
-	color: #fff;
+	color: #000;
 	box-sizing: border-box;
 `;
 

@@ -5,8 +5,8 @@ const UlContainer = () => {
 	return (
 		<UlStyle>
 			<LiStyle>
-				<Link href="/blog">
-					<a>Home</a>
+				<Link href="#blogSection">
+					<a tabIndex="0">Home</a>
 				</Link>
 			</LiStyle>
 			<LiStyle>
