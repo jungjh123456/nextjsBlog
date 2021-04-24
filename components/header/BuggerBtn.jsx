@@ -8,10 +8,5 @@ const BuggerBtn = ({ modalClick }) => {
 		</ButtonStyle>
 	);
 };
-function Ecurs(prev, next) {
-	if (prev.modalClick === next.modalClick) {
-		return true;
-	}
-	return false;
-}
-export default React.memo(BuggerBtn, Ecurs);
+
+export default React.memo(BuggerBtn);

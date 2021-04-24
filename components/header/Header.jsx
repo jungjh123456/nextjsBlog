@@ -17,11 +17,4 @@ const Header = ({ styleheader, isAnime, modal, modalClick }) => {
 	);
 };
 
-function Ecus(prev, next) {
-	if (prev.modal === next.modal) {
-		return true;
-	}
-	return false;
-}
-
-export default React.memo(Header, Ecus);
+export default React.memo(Header);

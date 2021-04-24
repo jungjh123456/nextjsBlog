@@ -7,12 +7,6 @@ const AuthModal = () => {
 			<li>
 				<button>Login</button>
 			</li>
-			{/* <li>
-				<div>aa</div>
-				<div>aa</div>
-				<div>aa</div>
-				<div>aa</div>
-			</li> */}
 
 			<li>
 				<button>SignUp</button>
