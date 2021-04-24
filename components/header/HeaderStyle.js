@@ -18,7 +18,6 @@ export const HeaderStyle = styled.header`
 		color: #000;
 	}
 	${(props) => {
-		console.log(props);
 		return (
 			props.isAnime &&
 			css`
@@ -78,5 +77,30 @@ export const ButtonStyle = styled.button`
 	color: #fff;
 	svg {
 		font-size: 2rem;
+	}
+`;
+
+export const TooltioStyle = styled.div`
+	display: flex;
+	position: fixed;
+
+	width: 30vw;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	transform: translateX(-100%);
+	backdrop-filter: blur(15px);
+	z-index: 1;
+	transition: 1s;
+	/* justify-content: center; */
+	align-items: center;
+	${(props) =>
+		props.modal &&
+		css`
+			transform: translateX(0%);
+		`}
+	/* transform: translate(-50%, -50%); */
+	a {
+		color: red;
 	}
 `;

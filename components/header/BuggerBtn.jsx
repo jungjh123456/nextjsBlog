@@ -1,12 +1,17 @@
 import React from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { ButtonStyle } from './HeaderStyle';
-const BuggerBtn = () => {
+const BuggerBtn = ({ modalClick }) => {
 	return (
-		<ButtonStyle>
+		<ButtonStyle onClick={modalClick}>
 			<GiHamburgerMenu />
 		</ButtonStyle>
 	);
 };
-
-export default React.memo(BuggerBtn);
+function Ecurs(prev, next) {
+	if (prev.modalClick === next.modalClick) {
+		return true;
+	}
+	return false;
+}
+export default React.memo(BuggerBtn, Ecurs);
