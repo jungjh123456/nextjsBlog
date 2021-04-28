@@ -15,8 +15,8 @@ const UlContainer = () => {
 				</Link>
 			</LiStyle>
 			<LiStyle>
-				<Link href="/blog">
-					<a>GitHub</a>
+				<Link href="/webStyle">
+					<a>webStyle</a>
 				</Link>
 			</LiStyle>
 		</UlStyle>
